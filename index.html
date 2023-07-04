@@ -1,167 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muhammad Saqib - Personal Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Muhammad Saqib</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
+    /* Add custom CSS styles here */
+    .profile-picture {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 20px auto;
     }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
+
+    .download-button {
+      text-align: center;
+      margin-top: 20px;
     }
-    h1, h2, h3 {
-      margin: 10px 0;
+
+    .picture-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
-    h1 {
-      font-size: 32px;
-    }
-    h2 {
-      font-size: 24px;
-    }
-    h3 {
-      font-size: 20px;
-    }
-    p {
-      margin-bottom: 10px;
-    }
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
-    .section-heading {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-    .section-heading i {
-      margin-right: 10px;
-    }
-    .section-content ul {
-      margin-left: 20px;
-    }
-    .section-content p:last-child {
-      margin-bottom: 0;
+
+    .picture-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
     }
   </style>
 </head>
+
 <body>
   <div class="container">
-    <header>
-      <h1>Muhammad Saqib</h1>
-      <p>Location: Lahore, Pakistan</p>
-      <p>Email: saqibtariq980@gmail.com | Phone: 03204567620</p>
-    </header>
-
-    <section class="section">
-      <h2>Intro</h2>
-      <p>With 5 years of experience, I'm a Senior Ruby on Rails Engineer skilled in developing and implementing complex web applications. From designing user interfaces to building and maintaining databases and server-side applications, my expertise spans across programming languages and frameworks.</p>
-    </section>
-
-    <section class="section">
-      <h2>Professional Experience</h2>
-      <div class="section-content">
-        <ul>
-          <li>SENIOR SOFTWARE ENGINEER / DEVSINC - Lahore, Pakistan<br>Aug 2022 - Present</li>
-          <li>SOFTWARE ENGINEER / DEVSINC - Lahore, Pakistan<br>Apr 2021 - Aug 2022</li>
-          <li>ASSOCIATE SOFTWARE ENGINEER / DEVSINC - Lahore, Pakistan<br>Mar 2020 - Mar 2021</li>
-          <li>TA OF AOA / PUCIT - Lahore, Pakistan<br>Jan 2020 - Jun 2020</li>
-          <li>TA OF DSA / PUCIT - Lahore, Pakistan<br>Sep 2019 - Jan 2020</li>
-          <li>TA OF PF / PUCIT - Lahore, Pakistan<br>Feb 2019 - Jun 2019</li>
-          <li>TA OF COAL / PUCIT - Lahore, Pakistan<br>Sep 2018 - Jan 2019</li>
-        </ul>
+      <div class="card">
+        <div class="card-body">
+          <img src="https://drive.google.com/uc?export=view&id=14EtkGBebI_YMiZiQf4cbaFE_AZ5gFzii" alt="Profile Picture" class="profile-picture">
+          <h1 class="display-4">Muhammad Saqib</h1>
+          <p class="lead">Senior Full Stack Developer</p>
+          <p class="card-text">Location: Lahore, Pakistan</p>
+          <p class="card-text">Email: saqibtariq980@gmail.com | Phone: 03204567620</p>
+          <hr class="my-4">
+          <div class="text-center">
+            <a href="https://drive.google.com/uc?export=download&id=1gHCxVNOd53pCX-_hrlb-wu5fXbnvVBy3" class="btn btn-primary" download>Download Resume</a>
+          </div>
+          <hr>
+          <h2 class="card-title">Intro</h2>
+          <p class="card-text">With 5 years of experience, I'm a Senior Full Stack Developer skilled in developing and implementing complex web applications. From designing user interfaces to building and maintaining databases and server-side applications, my expertise spans across programming languages and frameworks.</p>
+          <hr>
+          <h2 class="card-title">Professional Experience</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <strong>SENIOR SOFTWARE ENGINEER / DEVSINC</strong><br>
+              Lahore, Pakistan<br>
+              Aug 2022 - Present
+            </li>
+            <li class="list-group-item">
+              <strong>SOFTWARE ENGINEER / DEVSINC</strong><br>
+              Lahore, Pakistan<br>
+              Apr 2021 - Aug 2022
+            </li>
+            <li class="list-group-item">
+              <strong>ASSOCIATE SOFTWARE ENGINEER / DEVSINC</strong><br>
+              Lahore, Pakistan<br>
+              Mar 2020 - Mar 2021
+            </li>
+            <li class="list-group-item">
+              <strong>TA OF AOA / PUCIT</strong><br>
+              Lahore, Pakistan<br>
+              Jan 2020 - Jun 2020
+            </li>
+            <li class="list-group-item">
+              <strong>TA OF DSA / PUCIT</strong><br>
+              Lahore, Pakistan<br>
+              Sep 2019 - Jan 2020
+            </li>
+            <li class="list-group-item">
+              <strong>TA OF PF / PUCIT</strong><br>
+              Lahore, Pakistan<br>
+              Feb 2019 - Jun 2019
+            </li>
+            <li class="list-group-item">
+              <strong>TA OF COAL / PUCIT</strong><br>
+              Lahore, Pakistan<br>
+              Sep 2018 - Jan 2019
+            </li>
+          </ul>
+          <hr>
+          <h2 class="card-title">Education</h2>
+          <p class="card-text">PUCIT / Bachelors, Information Technology (2020) / 3.7 CGPA</p>
+          <p class="card-text">Lahore, Pakistan</p>
+          <hr>
+          <h2 class="card-title">Skills</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">JSON</li>
+                <li class="list-group-item">Node.js</li>
+                <li class="list-group-item">OOP</li>
+                <li class="list-group-item">Data Structures</li>
+                <li class="list-group-item">JQUERY</li>
+                <li class="list-group-item">Object-Oriented Programming (OOP)</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">C++</li>
+                <li class="list-group-item">Android</li>
+                <li class="list-group-item">MVC</li>
+                <li class="list-group-item">Mysql</li>
+                <li class="list-group-item">CSS</li>
+                <li class="list-group-item">HTML</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">JavaScript</li>
+                <li class="list-group-item">Java</li>
+                <li class="list-group-item">Ruby On Rails</li>
+                <li class="list-group-item">React Js</li>
+                <li class="list-group-item">React Native</li>
+                <li class="list-group-item">Vue Js</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Git</li>
+                <li class="list-group-item">Python</li>
+                <li class="list-group-item">Machine Learning</li>
+                <li class="list-group-item">Django</li>
+                <li class="list-group-item">Scrapy</li>
+                <li class="list-group-item">PyQT5</li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <h2 class="card-title">Projects</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <strong>MemoEdu</strong><br>
+              Jun 2020 - Present<br>
+              Tools: Nodejs, Reactjs, React-Native, Twillio, Calendly, and Stripe<br>
+              MemoEdu is a platform for schools to manage their students.
+            </li>
+            <li class="list-group-item">
+              <strong>Skyfi / Chaione</strong><br>
+              Tools: React, Stripe, and Redux toolkit<br>
+              <a href="https://www.skyfi.com/">https://www.skyfi.com/</a>
+            </li>
+            <li class="list-group-item">
+              <strong>Xiltrix / Chaione</strong><br>
+              Tools: Node.js, React, Postgres, Redux Toolkit, and AWS<br>
+              <a href="https://xiltrix.com/">https://xiltrix.com/</a>
+            </li>
+            <li class="list-group-item">
+              <strong>Fully Automated Examination Evaluation System</strong><br>
+              Tools: Python, OpenCV<br>
+              This is the Final Year Project of my degree. The "Fully Automated Examination Evaluation System" will be able to generate paper sheets accordingly with the candidates to appear in Examination or survey. Not only generation of sheets but it will also be able to check and mark these papers accordingly with the requirement defined. After quick, efficient, and intelligent checking, this system will compile a completely reliable and trustworthy result.
+            </li>
+            <li class="list-group-item">
+              <strong>Snake Game</strong><br>
+              Using JavaScript
+            </li>
+            <li class="list-group-item">
+              <strong>Puzzle Game</strong><br>
+              In Unity using C#
+            </li>
+            <li class="list-group-item">
+              <strong>Freelancing Website</strong><br>
+              Using Java and JSP
+            </li>
+            <li class="list-group-item">
+              <strong>Inventory Management System</strong><br>
+              Using VB.net
+            </li>
+            <li class="list-group-item">
+              <strong>Parking Management System</strong><br>
+              Using JAVA
+            </li>
+            <li class="list-group-item">
+              <strong>Smart City Travelers APP</strong><br>
+              In Android Java
+            </li>
+            <li class="list-group-item">
+              <strong>Rapid Roll</strong><br>
+              Using SFML (gui library in c++)
+            </li>
+          </ul>
+          <hr>
+          <h2 class="card-title">Awards</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Participated in Multiple Programming Competitions</li>
+            <li class="list-group-item">Remain in Principal List for 6 Semesters | PUCIT</li>
+          </ul>
+          <hr>
+          <h2 class="card-title">Functional Areas</h2>
+          <p class="card-text">Software & Web Development, Information Technology</p>
+          <h2 class="card-title">Languages</h2>
+          <p class="card-text">Urdu - Native, Punjabi - Native, English - Medium</p>
+          <h2 class="card-title">Hobbies</h2>
+          <p class="card-text">Chess, Table Tennis</p>
+        </div>
       </div>
-    </section>
-
-    <section class="section">
-      <h2>Education</h2>
-      <p>PUCIT / Bachelors, Information Technology (2020) / 3.7 CGPA<br>(Lahore)</p>
-    </section>
-
-    <section class="section">
-      <h2>Skills</h2>
-      <div class="section-content">
-        <ul>
-          <li>JSON</li>
-          <li>Node.js</li>
-          <li>OOP</li>
-          <li>Data Structures</li>
-          <li>JQUERY</li>
-          <li>Object-Oriented Programming (OOP)</li>
-          <li>C++</li>
-          <li>Android</li>
-          <li>MVC</li>
-          <li>Mysql</li>
-          <li>CSS</li>
-          <li>HTML</li>
-          <li>JavaScript</li>
-          <li>Java</li>
-          <li>Ruby On Rails</li>
-          <li>React Js</li>
-          <li>React Native</li>
-          <li>Vue Js</li>
-          <li>Git</li>
-          <li>Python</li>
-          <li>Machine Learning</li>
-          <li>Django</li>
-          <li>Scrapy</li>
-          <li>PyQT5</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Projects</h2>
-      <div class="section-content">
-        <ul>
-          <li>MemoEdu<br>Jun 2020 - Present<br>Tools: Node.js, React.js, React-Native, Twilio, Calendly, and Stripe<br>MemoEdu is a platform for schools to manage their students.</li>
-          <li>Skyfi / Chaione<br>Tools: React, Stripe, and Redux toolkit<br>Visit: <a href="https://www.skyfi.com/" target="_blank">https://www.skyfi.com/</a></li>
-          <li>Xiltrix / Chaione<br>Tools: Node.js, React, Postgres, Redux Toolkit, and AWS<br>Visit: <a href="https://xiltrix.com/" target="_blank">https://xiltrix.com/</a></li>
-          <li>Fully Automated Examination Evaluation System<br>Tools: Python, OpenCV<br>This is the Final Year Project of my degree. This "Fully Automated Examination Evaluation System" will be able to generate paper sheets accordingly with the candidates to appear in Examination or survey. Not only generation of sheets, but it will also be able to check and mark these papers accordingly with the defined requirements. After quick, efficient, and intelligent checking, this system will compile completely reliable and trustworthy results.</li>
-          <li>Snake Game<br>Using JavaScript</li>
-          <li>Puzzle Game<br>In Unity using C#</li>
-          <li>Freelancing Website<br>Using Java and JSP</li>
-          <li>Inventory Management System<br>Using VB.net</li>
-          <li>Parking Management System<br>Using JAVA</li>
-          <li>Smart City Travelers APP<br>In Android Java</li>
-          <li>Rapid Roll<br>Using SFML (GUI library in C++)</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Awards</h2>
-      <div class="section-content">
-        <ul>
-          <li>Participated in Multiple Programming Competitions</li>
-          <li>Remain in Principal List for 6 Semesters | PUCIT</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Functional Areas</h2>
-      <p>Software & Web Development, Information Technology</p>
-    </section>
-
-    <section class="section">
-      <h2>Languages</h2>
-      <p>Urdu - Native, Punjabi - Native, English - Medium</p>
-    </section>
-
-    <section class="section">
-      <h2>Hobbies</h2>
-      <p>Snooker, Chess, Table Tennis</p>
-    </section>
   </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
