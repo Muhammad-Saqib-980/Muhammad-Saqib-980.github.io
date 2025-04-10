@@ -1,188 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Saqib | Full-stack Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <title>Muhammad Saqib</title>
-  <style>
-    /* Add custom CSS styles here */
-    .profile-picture {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin: 20px auto;
-    }
+      .hover-zoom:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+      }
 
-    .download-button {
-      text-align: center;
-      margin-top: 20px;
-    }
+      .tech-badge {
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
 
-    .picture-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
+      .tech-badge:hover {
+        background-color: #4c6ef5;
+        transform: scale(1.1);
+      }
 
-    .picture-grid img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
-    }
-  </style>
-</head>
+      /* Smooth Scroll */
+      html {
+        scroll-behavior: smooth;
+      }
 
-<body>
-  <div class="container">
-      <div class="card">
-        <div class="card-body">
-          <img src="https://drive.google.com/uc?export=view&id=14EtkGBebI_YMiZiQf4cbaFE_AZ5gFzii" alt="Profile Picture" class="profile-picture">
-          <h1 class="display-4">Muhammad Saqib</h1>
-          <p class="lead">Senior Full Stack Developer</p>
-          <p class="card-text">Location: Lahore, Pakistan</p>
-          <p class="card-text">Email: saqibtariq980@gmail.com | Phone: 03204567620</p>
-          <hr class="my-4">
-          <div class="text-center">
-            <a href="https://drive.google.com/uc?export=download&id=1gHCxVNOd53pCX-_hrlb-wu5fXbnvVBy3" class="btn btn-primary" download>Download Resume</a>
+      /* Floating action button animation */
+      .fab-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        gap: 10px;
+        z-index: 1000;
+      }
+      .fab-container a {
+        background-color: #4c6ef5;
+        color: white;
+        padding: 10px;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+      }
+      .fab-container a:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <!-- Hero -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center p-6">
+      <img src="assets/profilePic.png" alt="Muhammad Saqib" class="h-40 rounded-full mb-4 border-4 border-indigo-500 shadow-lg transition duration-300 transform hover:scale-105">
+      <h1 class="text-4xl md:text-6xl font-bold text-white">Muhammad Saqib</h1>
+      <p class="mt-4 text-lg text-gray-400">Senior Full-stack Developer | React Native, React, Node.js, Ruby on Rails</p>
+      
+      <!-- Achievements Section with Icons and Light Jokes -->
+      <div class="mt-12 w-full flex flex-col items-center text-center justify-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+          <!-- Achievement 1: 20+ Projects -->
+          <div class="bg-gray-900 p-6 rounded-xl text-white shadow-lg transition-all transform hover:scale-125">
+            <div class="flex items-center justify-center mb-4">
+              <img src="assets/project.png" alt="20+ Projects" class="w-20 h-20 rounded-full">
+            </div>
+            <h3 class="text-xl font-bold">20+ Projects</h3>
+            <p class="mt-2 text-sm">Successfully delivered 20+ full-stack web and mobile projects. And yes, they didn’t come with a "404 - Project Not Found" error!</p>
           </div>
-          <hr>
-          <h2 class="card-title">Intro</h2>
-          <p class="card-text">With 5 years of experience, I'm a Senior Full Stack Developer skilled in developing and implementing complex web applications. From designing user interfaces to building and maintaining databases and server-side applications, my expertise spans across programming languages and frameworks.</p>
-          <hr>
-          <h2 class="card-title">Professional Experience</h2>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <strong>SENIOR SOFTWARE ENGINEER / DEVSINC</strong><br>
-              Lahore, Pakistan<br>
-              Aug 2022 - Present
-            </li>
-            <li class="list-group-item">
-              <strong>SOFTWARE ENGINEER / DEVSINC</strong><br>
-              Lahore, Pakistan<br>
-              Apr 2021 - Aug 2022
-            </li>
-            <li class="list-group-item">
-              <strong>ASSOCIATE SOFTWARE ENGINEER / DEVSINC</strong><br>
-              Lahore, Pakistan<br>
-              Mar 2020 - Mar 2021
-            </li>
-            <li class="list-group-item">
-              <strong>TA OF AOA / PUCIT</strong><br>
-              Lahore, Pakistan<br>
-              Jan 2020 - Jun 2020
-            </li>
-            <li class="list-group-item">
-              <strong>TA OF DSA / PUCIT</strong><br>
-              Lahore, Pakistan<br>
-              Sep 2019 - Jan 2020
-            </li>
-            <li class="list-group-item">
-              <strong>TA OF PF / PUCIT</strong><br>
-              Lahore, Pakistan<br>
-              Feb 2019 - Jun 2019
-            </li>
-            <li class="list-group-item">
-              <strong>TA OF COAL / PUCIT</strong><br>
-              Lahore, Pakistan<br>
-              Sep 2018 - Jan 2019
-            </li>
-          </ul>
-          <hr>
-          <h2 class="card-title">Education</h2>
-          <p class="card-text">PUCIT / Bachelors, Information Technology (2020) / 3.7 CGPA</p>
-          <p class="card-text">Lahore, Pakistan</p>
-          <hr>
-          <h2 class="card-title">Skills</h2>
-          <div class="row">
-            <div class="col-md-6">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">JSON</li>
-                <li class="list-group-item">Node.js</li>
-                <li class="list-group-item">OOP</li>
-                <li class="list-group-item">Data Structures</li>
-                <li class="list-group-item">JQUERY</li>
-                <li class="list-group-item">Object-Oriented Programming (OOP)</li>
-              </ul>
+          <!-- Achievement 2: 100% Success Rate -->
+          <div class="bg-gray-900 p-6 rounded-xl text-white shadow-lg transition-all transform hover:scale-125">
+            <div class="flex items-center justify-center mb-4">
+              <img src="assets/success.png" alt="100% Success Rate" class="w-20 h-20 rounded-full">
             </div>
-            <div class="col-md-6">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">C++</li>
-                <li class="list-group-item">Android</li>
-                <li class="list-group-item">MVC</li>
-                <li class="list-group-item">Mysql</li>
-                <li class="list-group-item">CSS</li>
-                <li class="list-group-item">HTML</li>
-              </ul>
-            </div>
+            <h3 class="text-xl font-bold">100% Success Rate</h3>
+            <p class="mt-2 text-sm">Consistently delivered projects on time with 100% client satisfaction. It's not magic; it's just solid development practices and a bit of caffeine!</p>
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">JavaScript</li>
-                <li class="list-group-item">Java</li>
-                <li class="list-group-item">Ruby On Rails</li>
-                <li class="list-group-item">React Js</li>
-                <li class="list-group-item">React Native</li>
-                <li class="list-group-item">Vue Js</li>
-              </ul>
+          <!-- Achievement 3: Full-stack Development -->
+          <div class="bg-gray-900 p-6 rounded-xl text-white shadow-lg transition-all transform hover:scale-125">
+            <div class="flex items-center justify-center mb-4">
+              <img src="assets/fullstack.png" alt="Full-stack Development" class="w-20 h-20 rounded-full">
             </div>
-            <div class="col-md-6">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Git</li>
-                <li class="list-group-item">Python</li>
-                <li class="list-group-item">Machine Learning</li>
-                <li class="list-group-item">Django</li>
-                <li class="list-group-item">Scrapy</li>
-                <li class="list-group-item">PyQT5</li>
-              </ul>
-            </div>
+            <h3 class="text-xl font-bold">Full-stack Development</h3>
+            <p class="mt-2 text-sm">Experienced in both front-end and back-end development. From user interfaces to databases, I’ve got it all covered!</p>
           </div>
-          <hr>
-          <h2 class="card-title">Projects</h2>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <strong>MemoEdu</strong><br>
-              Tools: Ruby on Rails, Reactjs, React-Native, Twillio, Calendly, and Stripe<br>
-              MemoEdu is a platform for schools to manage their students.
-            </li>
-            <li class="list-group-item">
-              <strong>Skyfi / Chaione</strong><br>
-              Tools: React, Stripe, and Redux toolkit<br>
-              <a href="https://www.skyfi.com/">https://www.skyfi.com/</a>
-            </li>
-            <li class="list-group-item">
-              <strong>Xiltrix / Chaione</strong><br>
-              Tools: React, Node.js, Postgres, Redux Toolkit, and AWS<br>
-              <a href="https://xiltrix.com/">https://xiltrix.com/</a>
-            </li>
-            <li class="list-group-item">
-              <strong>Saffron</strong><br>
-              Tools: Ruby on Rails, Vue.js, Vuex, and AWS<br>
-              <a href="http://www.saffronapp.co/">http://www.saffronapp.co/</a>
-            </li>
-          </ul>
-          <hr>
-          <h2 class="card-title">Awards</h2>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Participated in Multiple Programming Competitions</li>
-            <li class="list-group-item">Remain in Principal List for 6 Semesters | PUCIT</li>
-          </ul>
-          <hr>
-          <h2 class="card-title">Functional Areas</h2>
-          <p class="card-text">Software & Web Development, Information Technology</p>
-          <h2 class="card-title">Languages</h2>
-          <p class="card-text">Urdu - Native, Punjabi - Native, English - Medium</p>
-          <h2 class="card-title">Hobbies</h2>
-          <p class="card-text">Chess, Table Tennis</p>
+          <!-- Achievement 4: Multiple Domain Exposure -->
+          <div class="bg-gray-900 p-6 rounded-xl text-white shadow-lg transition-all transform hover:scale-125">
+            <div class="flex items-center justify-center mb-4">
+              <img src="assets/multiple_domain.png" alt="Multiple Domain Exposure" class="w-20 h-20 rounded-full">
+            </div>
+            <h3 class="text-xl font-bold">Multiple Domain Exposure</h3>
+            <p class="mt-2 text-sm">Worked across various industries including education, real estate, and time management. This versatility keeps me on my toes!</p>
+          </div>
+          <!-- Achievement 5: DevOps Experience -->
+          <div class="bg-gray-900 p-6 rounded-xl text-white shadow-lg transition-all transform hover:scale-125">
+            <div class="flex items-center justify-center mb-4">
+              <img src="assets/devops.png" alt="DevOps Experience" class="h-20 rounded-full">
+            </div>
+            <h3 class="text-xl font-bold">DevOps Experience</h3>
+            <p class="mt-2 text-sm">Hands-on experience with cloud services, CI/CD pipelines, and server management. I can make sure your server runs smoothly without needing a manual reboot!</p>
+          </div>
+          <!-- Achievement 6: Agile Methodologies -->
+          <div class="bg-gray-900 p-6 rounded-xl text-white shadow-lg transition-all transform hover:scale-125">
+            <div class="flex items-center justify-center mb-4">
+              <img src="assets/agile.png" alt="Agile Methodologies" class=" h-20 rounded-full">
+            </div>
+            <h3 class="text-xl font-bold">Agile Methodologies</h3>
+            <p class="mt-2 text-sm">Experienced in Agile and Scrum environments, ensuring efficient project delivery and constant iterations. I promise, no more 'scope creep' — unless it’s a really cool idea!</p>
+          </div>
+          <!-- Achievement 7: Cross-functional Teamwork -->
+          <div class="bg-gray-900 p-6 rounded-xl text-white shadow-lg transition-all transform hover:scale-125">
+            <div class="flex items-center justify-center mb-4">
+              <img src="assets/teams.png" alt="Cross-functional Teamwork" class=" h-20 rounded-full">
+            </div>
+            <h3 class="text-xl font-bold">Cross-functional Teamwork</h3>
+            <p class="mt-2 text-sm">Collaboration is key! I’ve successfully worked with designers, product managers, and QA teams to deliver seamless products.</p>
+          </div>
         </div>
       </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+    </section>
+    
+    <!-- About -->
+    <section id="about" class=" bg-gray-800 min-h-screen flex flex-col justify-center items-center text-center p-6">
+      <h2 class="text-2xl font-bold mb-4">About Me</h2>
+      <p class="text-gray-300">
+        I’m a passionate, result-driven full-stack developer with over 5 years of professional experience. I specialize in creating scalable web and mobile applications using React, React Native, Node.js, TypeScript, and Ruby on Rails. Having delivered 20+ major projects with a 100% success rate, I’m proud of my work but always striving for that 100% perfection (because who doesn't like a good challenge, right?). 
+    
+        <br /><br />
+        After spending time as an Associate Team Lead at Devsinc, where I led multiple cross-functional teams, handled frontend and backend architecture, implemented CI/CD pipelines, and mentored junior developers, I’ve now embraced the freedom of being an independent contractor. No boss, just me and my code – and maybe a cup of coffee (or three). I continue to thrive in agile environments where collaboration, performance optimization, and delivering a top-notch user experience are key priorities. Let's just say I’m like the Swiss Army knife of developers – I’ve got all the tools for any challenge!
+      </p>
+    </section>
+    
 
+    <!-- Skills -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center p-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-2xl font-bold mb-6 text-center">Tech Stack</h2>
+        <div class="flex flex-wrap justify-center gap-4 text-sm text-gray-300">
+          <span class="bg-gray-700 px-3 py-1 rounded-full tech-badge">React / React Native</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full tech-badge">Node.js</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full tech-badge">Ruby on Rails</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full tech-badge">TypeScript</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full tech-badge">Express.js</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full tech-badge">MongoDB / PostgreSQL</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full tech-badge">AWS (EC2, S3, EBS, SNS)</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full tech-badge">Docker</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full tech-badge">GraphQL / REST APIs</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full tech-badge">TDD / BDD</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full tech-badge">CI/CD</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full tech-badge">php / laravel</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full tech-badge">Python</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-full tech-badge">Agile / Jira / Trello</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="bg-gray-800 min-h-screen flex flex-col justify-center items-center text-center p-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-2xl font-bold mb-8 text-center">Projects</h2>
+        <div class="grid gap-6 md:grid-cols-2">
+          <div class="bg-gray-700 p-6 rounded-xl hover-zoom">
+            <h3 class="text-xl font-semibold">MemoEdu</h3>
+            <p class="text-gray-400 mt-2">React Native + Rails app for student services like financial aid, live messaging, and academic tracking. Integrated Twilio for video and geolocation-based attendance. Included features like document scanning and signing.</p>
+            <a href="https://memoedu.com/" class="text-indigo-400 hover:underline mt-4 inline-block" target="_blank">Visit site →</a>
+          </div>
+          <div class="bg-gray-700 p-6 rounded-xl hover-zoom">
+            <h3 class="text-xl font-semibold">ZoneGoat</h3>
+            <p class="text-gray-400 mt-2">AI-powered Rails + React platform for real estate compliance and opportunity tracking. Built intuitive filtering and regulation-matching features to help users find properties aligned with local laws.</p>
+          </div>
+          <div class="bg-gray-700 p-6 rounded-xl hover-zoom">
+            <h3 class="text-xl font-semibold">SkyFi</h3>
+            <p class="text-gray-400 mt-2">Earth observation data platform with secure user auth, image search, and purchases. Delivered high-quality satellite imagery and analytics through a responsive React Native UI.</p>
+            <a href="https://app.skyfi.com/" class="text-indigo-400 hover:underline mt-4 inline-block" target="_blank">Visit site →</a>
+          </div>
+          <div class="bg-gray-700 p-6 rounded-xl hover-zoom">
+            <h3 class="text-xl font-semibold">Saffron App</h3>
+            <p class="text-gray-400 mt-2">Time management tool for individuals and businesses. Built with Vue and Rails, focused on UX and productivity features. Enabled time tracking, reporting, and goal setting.</p>
+            <a href="http://www.saffronapp.co/" class="text-indigo-400 hover:underline mt-4 inline-block" target="_blank">Visit site →</a>
+          </div>
+          <div class="bg-gray-700 p-6 rounded-xl hover-zoom">
+            <h3 class="text-xl font-semibold">Xiltrix</h3>
+            <p class="text-gray-400 mt-2">Developed from scratch as a full-stack developer. Real-time laboratory monitoring platform to safeguard scientific samples. Built MVP and trained new developers for handoff.</p>
+            <a href="https://xiltrix.com/" class="text-indigo-400 hover:underline mt-4 inline-block" target="_blank">Visit site →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="bg-gray-800 py-12 px-6 animate-fade-in">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold mb-6">Work Experience</h2>
+        <ul class="space-y-6">
+          <li>
+            <strong>Associate Team Lead</strong> – Devsinc (Sep 2024 – Present)
+            <ul class="list-disc list-inside text-gray-400">
+              <li>Led teams of 10+ developers across multiple projects (Node.js, RoR, React, React Native).</li>
+              <li>Worked closely with sales and product teams to expand project scope and technical consulting.</li>
+              <li>Streamlined CI/CD, team sprints, and agile retrospectives.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Senior Software Engineer</strong> – Devsinc (Nov 2022 – Sep 2024)
+            <ul class="list-disc list-inside text-gray-400">
+              <li>Delivered high-quality scalable apps using MERN stack and Docker.</li>
+              <li>Collaborated on design implementation and UX improvement.</li>
+              <li>Improved backend query performance and introduced TDD practices.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Full Stack Engineer</strong> – Devsinc (Apr 2021 – Oct 2022)
+            <ul class="list-disc list-inside text-gray-400">
+              <li>Built mobile apps using React Native, Redux, and Fastlane.</li>
+              <li>Integrated APIs, optimized performance, and maintained architecture.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Software Engineer</strong> – Devsinc (Apr 2019 – Mar 2021)
+            <ul class="list-disc list-inside text-gray-400">
+              <li>Developed modern UIs with React & Express.</li>
+              <li>Delivered 15+ web features, achieving 98% user satisfaction.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="p-16 text-center animate-fade-in flex flex-col justify-center items-center space-y-8 min-h-screen">
+      <h2 class="text-3xl font-bold mb-6">Let’s Connect</h2>
+      <p class="text-lg text-gray-400 mb-6 ml-40 mr-40">Got a question, a project idea, or just want to talk about the latest JavaScript framework? Feel free to reach out—I'm always up for a good chat (preferably with coffee in hand!).</p>
+      
+      <div class="flex justify-center space-x-8">
+        <a href="mailto:saqibtariq980@gmail.com" class="text-indigo-400 flex items-center space-x-2">
+          <i class="fas fa-envelope"></i>
+          <span>Email</span>
+        </a>
+        <a href="tel:+923204567620" class="text-indigo-400 flex items-center space-x-2">
+          <i class="fas fa-phone-alt"></i>
+          <span>Phone</span>
+        </a>
+        <a href="https://www.linkedin.com/in/saqib-980" target="_blank" class="text-indigo-400 flex items-center space-x-2">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/Muhammad-Saqib-980" target="_blank" class="text-indigo-400 flex items-center space-x-2">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+    
+      <p class="text-lg text-gray-400 mt-6">P.S. I swear I can help you debug your code faster than you can say "Syntax Error" (okay, maybe not *that* fast, but close!).</p>
+    </section>
+    
+    <!-- Floating Action Buttons -->
+    <div class="fab-container">
+      <a href="https://www.linkedin.com/in/saqib-980" target="_blank" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+      <a href="https://github.com/Muhammad-Saqib-980" target="_blank" class="text-white"><i class="fab fa-github fa-lg"></i></a>
+    </div>        
+  </body>
 </html>
